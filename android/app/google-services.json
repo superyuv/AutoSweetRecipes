@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "88425938994",
+    "project_id": "autosweetrecipe",
+    "storage_bucket": "autosweetrecipe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88425938994:android:911f846c6022d458983c2b",
+        "android_client_info": {
+          "package_name": "com.example.auto_sweet_recipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88425938994-12bta7s4gsuap1fsges6j0sg50jk4on1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALislusqqvErwQheu8Y7Pe28lEw8RhsqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88425938994-12bta7s4gsuap1fsges6j0sg50jk4on1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
