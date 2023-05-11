@@ -81,11 +81,11 @@ class _PageFavoritesStatefulState extends State<PageFavoritesStateful> {
                         stringList: [
                           (e.data()["ratingAvg"]?.toString() ?? "0"),
                           "Uses: ${e.data()["useCounter"]?.toString() ?? "0"}",
-                          "Score: ${score(e.data()["ingredients"], userInventory) ?? "0"}",
+                          "${score(e.data()["ingredients"], userInventory) ?? "0"}",
                         ],
                       ))
                   .toList();
-              favoriteList.sort((a,b) => b.stringList[2].compareTo(a.stringList[2]));
+              favoriteList.sort((a, b) => double.parse(b.stringList![2]).compareTo(double.parse(a.stringList![2])));
 
               return ListView.builder(
                 padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
@@ -155,7 +155,7 @@ class _PageFavoritesStatefulState extends State<PageFavoritesStateful> {
                                   const EdgeInsets.fromLTRB(0, 0, 15, 0),
                                   child: Align(
                                     alignment: Alignment.centerLeft,
-                                    child: Text(
+                                    child: Text("Score: " +
                                       favoriteList[index].stringList![2] ?? "0",
                                       style: const TextStyle(color: Colors.pink),
                                     ),
